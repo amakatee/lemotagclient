@@ -1,0 +1,305 @@
+$maindark:hsl(0, 0%, 15%);
+$lightgrey: hsl(0, 4%, 90%);
+$mediumgrey:hsl(0, 0%, 21%);
+
+
+
+a {
+    text-decoration: none;
+    color: $maindark;
+ 
+}
+
+
+.title-base {
+    font-size: 0.6rem;
+    
+    font-weight: 340;
+    line-height: 1.5;
+    text-transform: uppercase;
+     
+    margin-bottom: 0.6rem;
+    letter-spacing: .12em;
+
+    
+}
+
+/* product icon */
+.products__main-cont {
+    padding-top: 4.5rem;
+    
+
+    .products__cont-filter {
+    
+        width: 100%;
+        min-height: 5vh;
+        
+        text-align: center;
+        padding-block: 1rem;
+        
+    }
+    
+}
+
+.products__cont {
+   
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 1rem;
+ 
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: space-around;
+    
+    
+
+    margin: 0;
+    padding: 0;
+
+    .product__cont-mini {
+
+       width: 100%;
+       margin-bottom: 1rem;
+
+        .product__mini-img {
+            
+            aspect-ratio: 1/1.5;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product__mini-desc {
+            padding-top: 0.5rem;
+            margin-left: 0.5rem;
+
+            .product__mini-user {
+                color: $mediumgrey;
+                font-size: .67rem;
+                letter-spacing: .5px;
+                font-weight:400;
+                text-transform: capitalize;
+                text-decoration: underline;
+                 margin-bottom: 3px;
+
+            }
+
+            h4 {
+                font-size: .67rem;
+                letter-spacing: .5px;
+                font-weight: 350;
+                text-transform: uppercase;
+                 margin-bottom: 3px;
+                 
+            }
+            p {
+                font-size: .75rem;
+                letter-spacing: .3px;
+                font-weight: 350;
+                margin-top: -1px;}
+        }
+      
+   
+    }
+}
+
+/* product icons ends*/
+
+.single__prod-desc {
+ 
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: $maindark;
+    padding: .6rem 1.5rem;
+    gap: 2.5rem;
+   padding-bottom: 3rem;
+
+          
+    .single__prod-title {
+        width: 100%;
+        padding-top: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+
+
+    
+        h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 340;
+            letter-spacing: .13em;
+            margin-bottom: .5rem;
+
+        }
+       
+       .creator-name {
+           font-size: .8rem;
+           font-weight: 350;
+           text-transform: capitalize;
+           text-decoration: underline;
+          
+
+       }
+        p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: .10em;
+        }
+        }
+    
+    .single__prod-text {
+        p {
+            font-size: .7rem;
+            font-weight: 350;
+            line-height: 1.5;
+            letter-spacing: .10em;
+        }
+        
+
+    }    
+
+    .single__prod-sizecolor {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+       
+
+
+        .single__prod-color {
+
+            .color__span-cont {
+                display: flex;
+                gap: 1rem;
+
+                .color-span {
+                    padding: .5em 1.4em;
+                    cursor: pointer;
+                    
+                    background-color: $lightgrey;
+                    h4 {
+                        font-weight: 350;
+                      
+                        font-size: .7rem;
+                       letter-spacing: .1em;
+
+    
+                    }
+
+                }
+                :hover {
+                    background-color: $maindark;
+                    color: white;
+                    transition: .5s ease;
+                }
+                .active {
+                    background-color: $maindark;
+                    color: white;
+                    transition: .5s ease;
+                }
+                
+                
+            }
+        }
+
+        .single__prod-size {
+
+            .size__span-cont {
+                display: flex;
+                gap: 1rem;
+          
+                .size-span {
+                    background-color: $lightgrey;
+                    display: flex;
+                    gap: 1rem;
+                    min-width: 1.6rem;
+                    padding: .6em .4em;
+                    display: grid;
+                    place-content: center;
+
+                    h4 {
+                        font-size: .7rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        text-transform: uppercase;
+                    }
+                  
+                }
+                :hover {
+                    background-color: $maindark;
+                    color: white;
+                    transition: .5s ease;
+                }
+                .active {
+                    background-color: $maindark;
+                    color: white;
+                    transition: .5s ease;
+                }
+
+
+
+            }
+        }
+    }
+
+    .single__prod-btn {
+        width: 100%;
+        .add-tc-btn {
+            width: 80%;
+            border: 1px solid $maindark;
+            background-color: transparent;
+            padding: .9rem 5rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-size: .8rem;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+
+
+        }
+    }
+    
+}
+
+
+/*single produvt*/
+
+/*carousel*/
+.single__prod-carousel{
+    display: flex;
+    flex-direction: column;
+   align-self: flex-start;
+   clip-path: inset(10px round 15px 15px 0 0);
+
+   .carousel-cont {
+    width: 100%;
+    position: relative;
+    height:80vh;
+     display: flex;
+     background-color: pink;
+ 
+   
+    
+     img{
+         
+       
+        width: 100%;
+     height: 100%;
+        object-fit: cover;
+      }
+
+   }
+}
